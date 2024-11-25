@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #2e2e4e;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Sections */
+.promo {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 50px;
+}
+
+.promo h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.promo-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-card {
+  background-color: #5c2e5c;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-grid .item {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5c2e5c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #742c36;
+}
+
+/* Footer */
+footer {
+  background-color: #2e2e4e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Section */
+.categories {
+  padding: 30px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  background-color: #3f5461;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 30px;
+}
+
+.testimonials p {
+  background-color: #742c36;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Feedback Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5c2e5c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #742c36;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .promo-cards {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}

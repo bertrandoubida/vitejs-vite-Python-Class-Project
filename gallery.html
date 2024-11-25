@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Book Haven</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Book Haven</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="custom.html">Custom Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="gallery">
+      <h2>Our Books</h2>
+      <div class="gallery-grid">
+        <!-- Book 1 -->
+        <div class="item">
+          <img src="book1.jpg" alt="Book 1" />
+          <p>Book 1: A Journey to Adventure</p>
+          <button
+            class="add-to-cart"
+            data-item="Book 1: A Journey to Adventure"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="item">
+          <img src="book2.jpg" alt="Book 2" />
+          <p>Book 2: The Lost Kingdom</p>
+          <button class="add-to-cart" data-item="Book 2: The Lost Kingdom">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="item">
+          <img src="book3.jpg" alt="Book 3" />
+          <p>Book 3: Mystic Waters</p>
+          <button class="add-to-cart" data-item="Book 3: Mystic Waters">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="item">
+          <img src="book4.jpg" alt="Book 4" />
+          <p>Book 4: Tales of the Unknown</p>
+          <button class="add-to-cart" data-item="Book 4: Tales of the Unknown">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 5 (New) -->
+        <div class="item">
+          <img src="book5.jpg" alt="Book 5" />
+          <p>Book 5: The Enchanted Forest</p>
+          <button class="add-to-cart" data-item="Book 5: The Enchanted Forest">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 6 (New) -->
+        <div class="item">
+          <img src="book6.jpg" alt="Book 6" />
+          <p>Book 6: Shadows of the Past</p>
+          <button class="add-to-cart" data-item="Book 6: Shadows of the Past">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 7 (New) -->
+        <div class="item">
+          <img src="book7.jpg" alt="Book 7" />
+          <p>Book 7: Legends Untold</p>
+          <button class="add-to-cart" data-item="Book 7: Legends Untold">
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Book 8 (New) -->
+        <div class="item">
+          <img src="book8.jpg" alt="Book 8" />
+          <p>Book 8: The Final Quest</p>
+          <button class="add-to-cart" data-item="Book 8: The Final Quest">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <button id="clear-cart">Clear Cart</button>
+    <button id="process-order">Process Order</button>
+    <p><a href="#" id="view-cart">View Cart</a></p>
+
+    <footer>
+      <p>Hours of Operation: Mon-Fri 9 AM - 8 PM | Sat-Sun 10 AM - 6 PM</p>
+      <input
+        type="email"
+        id="subscribe-email"
+        placeholder="Enter your email"
+        required
+      />
+      <button class="subscribe-button">Subscribe</button>
+    </footer>
+
+    <script src="counter.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
